@@ -236,7 +236,7 @@ def connect_to_database():
         return True
         
     except Exception as e:
-        print(f"❌ Database connection failed: {e}")
+        print(f"❌lone Database connection failed: {e}")
         print("\nTroubleshooting:")
         print("1. Check if SQL Server is running")
         print("2. Verify server name (use 'localhost' or 'localhost\\SQLEXPRESS')")
@@ -449,6 +449,6 @@ def start_live_stream(transactions_per_second=2):
             print("✅ Database connection closed\n")
 
 
-# ==================== RUN ====================
+
 if __name__ == "__main__":
     start_live_stream(transactions_per_second=2)
